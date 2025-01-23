@@ -1,0 +1,33 @@
+.content{
+    height: 91vh;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: red ; */
+}
+
+.content-container{
+    display: flex;
+    /* background-color: green; */
+    gap: 1rem;
+}
+
+.content-half{
+    width: 100%;
+    flex-direction: row;
+    /* background-color: blue; */
+    border: 2px solid rgb(176, 154, 154);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+}
+
+.card{
+    background-color: red;
+}
