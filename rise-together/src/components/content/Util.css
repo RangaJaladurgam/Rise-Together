@@ -3,7 +3,7 @@
     display: flex;
     padding:2rem 0;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     /* background-color: red ; */
 }
 
@@ -58,9 +58,73 @@
     /* background-color: red; */
 }
 .content-line code{
-    background-color: rgb(222, 213, 213);
+    background-color: rgba(232, 223, 223, 0.737);
     width: 80%;
     padding: 1rem;
     border: none;
     border-radius: 4px;
 }
+span{
+    color: black;
+}
+
+.ans{
+    text-decoration: underline;
+}
+
+.render-content{
+    /* background-color: red; */
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+/* Slide in from the left */
+.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+  
+  /* Slide out to the right */
+  .slide-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .slide-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+
+  /* Initial state before the transition */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  
+  /* Active state during the transition */
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  /* Initial state for exit transition */
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Active state during exit transition */
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }

@@ -1,4 +1,53 @@
 .container{
   margin-inline:3rem ;
 }
+/* Initial state before the transition */
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+/* Active state during the transition */
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+/* Initial state for exit transition */
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Active state during exit transition */
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+/* Slide in from the left (enter) */
+.slide-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+/* Slide out to the right (exit) */
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
 

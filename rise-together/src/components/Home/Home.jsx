@@ -9,13 +9,16 @@ function Home() {
       <Banner />
       <div className="card-container">
         <Link to="/java" className="nav-link">
-          <Card title="Xplore HandsOn (Java)"/>
+          <Card title="Xplore HandsOn (Java)" />
         </Link>
         <Link to="/python" className="nav-link">
-          <Card title="Xplore HandsOn (Python)"/>
+          <Card title="Xplore HandsOn (Python)" />
         </Link>
         <Link to="/kyt" className="nav-link">
-          <Card title="Know Your Organization 2024"/>
+          <Card title="Know Your Organization 2024" />
+        </Link>
+        <Link to="/bizskills" className="nav-link">
+          <Card title="Bussiness Skills" />
         </Link>
       </div>
     </div>
