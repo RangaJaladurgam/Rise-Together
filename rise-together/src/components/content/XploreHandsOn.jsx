@@ -1,39 +1,47 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Card from "../Card/Card";
 import "./Util.css";
+import JavaHandsOn from "./JavaHandsOn";
+import SideBar from "./SideBar";
+import SqlHandsOn from "./SqlHandsOn";
+import UnixHandsOn from "./UnixHandsOn";
+import UiHandsOn from "./UiHandOn";
+import JsHandsOn from "./JsHandsOn";
 
 function XploreHandsOn() {
+  const location = useLocation();
+
+  // Define content for each route
+  const renderContent = () => {
+    switch (location.pathname) {
+      case "/java-handson":
+        return <JavaHandsOn/>;
+      case "/sql-handson":
+        return <SqlHandsOn/>;
+      case "/unix-handson":
+        return <UnixHandsOn/>;
+      case "/ui-handson":
+        return <UiHandsOn/>;
+       case "/js-handson":
+        return <JsHandsOn/>;
+      default:
+        return <p>Select a HandsOn topic to see the details here.</p>;
+    }
+  };
+
   return (
-    <div className="content ">
+    <div className="content">
       <h2>Xplore HandsOn (Java)</h2>
       <div className="content-container">
-        <div className="card-container content-half">
-          <Link to="/java-handson" className="nav-link">
-            <Card title="Java HandsOn" />
-          </Link>
-          <Link to="/sql-handson" className="nav-link">
-            <Card title="SQL HandsOn" />
-          </Link>
-          <Link to="/unix-handson" className="nav-link">
-            <Card title="Unix HandsOn" />
-          </Link>
-          <Link to="/ui-handson" className="nav-link">
-            <Card title="HTML&CSS HandsOn" />
-          </Link>
-          <Link to="/js-handson" className="nav-link">
-            <Card title="JavaScript HandsOn" />
-          </Link>
+        {/* Left Half */}
+        <div className="card-container content-half half1">
+          <SideBar/>
         </div>
-        <div className="card-container content-half">
-          <div className="row">
-            <Link to="/problem1" className="nav-link ">
-              <Card title="Numeric Computation" />
-            </Link>
-            <Link to="/problem2" className="nav-link">
-              <Card title="Objects and Classes" />
-            </Link>
-          </div>
+
+        {/* Right Half */}
+        <div className="card-container content-half half2">
+          {renderContent()}
         </div>
       </div>
     </div>
