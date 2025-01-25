@@ -16,15 +16,15 @@ function XploreHandsOn() {
   // Define content for each route
   const renderContent = () => {
     switch (location.pathname) {
-      case "/java-handson":
+      case "/java/java-handson":
         return <JavaHandsOn/>;
-      case "/sql-handson":
+      case "/java/sql-handson":
         return <SqlHandsOn/>;
-      case "/unix-handson":
+      case "/java/unix-handson":
         return <UnixHandsOn/>;
-      case "/ui-handson":
+      case "/java/ui-handson":
         return <UiHandsOn/>;
-       case "/js-handson":
+       case "/java/js-handson":
         return <JsHandsOn/>;
       default:
         return <p>Select a HandsOn topic to see solutions here.</p>;

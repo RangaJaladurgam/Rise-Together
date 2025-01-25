@@ -14,6 +14,16 @@ import "./App.css";
 import XploreHandsOn from "./components/content/XploreHandsOn";
 import JavaHandsOn from "./components/content/JavaHandsOn";
 import BizzSkills from "./components/content/BizzSkills";
+import KYT from "./components/content/KYT";
+import Question1 from "./components/content/Java/Question1";
+import Question2 from "./components/content/Java/Question2";
+import Question3 from "./components/content/Java/Question3";
+import Question4 from "./components/content/Java/Question4";
+import Question5 from "./components/content/Java/Question5";
+import Question6 from "./components/content/Java/Question6";
+import Question7 from "./components/content/Java/Question7";
+import Question8 from "./components/content/Java/Question8";
+import Question9 from "./components/content/Java/Question9";
 
 function App() {
   const location = useLocation();
@@ -26,19 +36,51 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/java" element={<XploreHandsOn />} />
+              <Route path="/kyt" element={<KYT />} />
               <Route path="/bizskills" element={<BizzSkills />} />
             </Routes>
           </div>
         </CSSTransition>
       </TransitionGroup>
       <div className="container">
-      <Routes>
-        <Route path="/java-handson" element={<XploreHandsOn />} />
-        <Route path="/sql-handson" element={<XploreHandsOn />} />
-        <Route path="/unix-handson" element={<XploreHandsOn />} />
-        <Route path="/ui-handson" element={<XploreHandsOn />} />
-        <Route path="/js-handson" element={<XploreHandsOn />} />
-      </Routes>
+        <Routes>
+          <Route path="/java/java-handson" element={<XploreHandsOn />} />
+          <Route path="/java/sql-handson" element={<XploreHandsOn />} />
+          <Route path="/java/unix-handson" element={<XploreHandsOn />} />
+          <Route path="/java/ui-handson" element={<XploreHandsOn />} />
+          <Route path="/java/js-handson" element={<XploreHandsOn />} />
+        </Routes>
+        <Routes>
+          <Route path="/kyt/embrace" element={<KYT />} />
+          <Route path="/kyt/quiz" element={<KYT />} />
+          <Route path="/kyt/itci" element={<KYT />} />
+          <Route path="/kyt/bizz-4" element={<KYT />} />
+          <Route path="/kyt/digital-awareness" element={<KYT />} />
+          <Route path="/kyt/mfdm" element={<KYT />} />
+          <Route path="/kyt/final-assessment" element={<KYT />} />
+        </Routes>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.pathname}
+            classNames="fade"
+            timeout={300}
+          >
+            <Routes location={location}>
+              <Route
+                path="/java/java-handson/problem1-1"
+                element={<Question1 />}
+              />
+              <Route path="/java/java-handson/problem1-2" element={<Question2/>}/>
+              <Route path="/java/java-handson/problem2-1" element={<Question3 />}/>
+              <Route path="/java/java-handson/problem2-2" element={<Question4 />}/>
+              <Route path="/java/java-handson/problem3-1" element={<Question5 />}/>
+              <Route path="/java/java-handson/problem3-2" element={<Question6 />}/>
+              <Route path="/java/java-handson/problem4-1" element={<Question7 />}/>
+              <Route path="/java/java-handson/problem4-2" element={<Question8 />}/>
+              <Route path="/java/java-handson/problem5-1" element={<Question9 />}/>
+            </Routes>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
     </>
   );

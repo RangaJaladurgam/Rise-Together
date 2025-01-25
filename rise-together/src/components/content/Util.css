@@ -51,6 +51,7 @@
 
 .half2{
     flex-basis: 75%;
+    justify-content: start;
 }
 .content-line h4{
     text-align: center;
@@ -78,6 +79,17 @@ span{
     gap: 1rem;
     flex-direction: column;
 }
+
+.handson-question{
+  /* background-color: red; */
+  flex-basis: 40%;
+}
+.handson-code{
+  /* background-color: red; */
+  flex-basis: 60%;
+}
+
+
 
 /* Slide in from the left */
 .slide-enter {
@@ -127,4 +139,37 @@ span{
     opacity: 0;
     transform: translateY(0%);
     transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+
+
+  .kyt-questions {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .section {
+    border-bottom: 2px dotted #007BFF;
+    margin-bottom: 30px;
+  }
+  .question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .question:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #007BFF;
   }
