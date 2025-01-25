@@ -11,14 +11,17 @@ function Home() {
         <Link to="/java" className="nav-link">
           <Card title="Xplore HandsOn (Java)" />
         </Link>
-        <Link to="/python" className="nav-link">
+        {/* <Link to="/python" className="nav-link">
           <Card title="Xplore HandsOn (Python)" />
-        </Link>
+        </Link> */}
         <Link to="/kyt" className="nav-link">
           <Card title="Know Your Organization 2024" />
         </Link>
         <Link to="/bizskills" className="nav-link">
           <Card title="Bussiness Skills" />
+        </Link>
+        <Link to="/ipa-practice" className="nav-link">
+          <Card title="Xplore Practice IPA Questions 2024" />
         </Link>
       </div>
     </div>

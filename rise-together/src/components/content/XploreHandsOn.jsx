@@ -33,7 +33,7 @@ function XploreHandsOn() {
 
   return (
     <div className="content">
-       <Link to="/" className="nav-link "> <span><i class="fa-solid fa-arrow-left"></i></span>
+       <Link to="/" className=""> <span><i class="fa-solid fa-arrow-left"></i></span>
         </Link>
       <h2>Xplore HandsOn (Java)</h2>
       <div className="content-container">
