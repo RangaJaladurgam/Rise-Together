@@ -192,7 +192,7 @@ class Shirt
 
   return (
     <div className="content">
-      <Link to="/java/java-handson" className="nav-link">
+      <Link to="/java/java-handson" className="">
         <span>
           <i className="fa-solid fa-arrow-left"></i>
         </span>

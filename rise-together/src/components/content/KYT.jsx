@@ -38,7 +38,7 @@ function KYT() {
 
   return (
     <div className="content">
-      <Link to="/" className="nav-link ">
+      <Link to="/" className="">
         {" "}
         <span>
           <i class="fa-solid fa-arrow-left"></i>

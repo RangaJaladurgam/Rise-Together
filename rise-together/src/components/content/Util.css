@@ -13,7 +13,10 @@
     /* background-color: green; */
     gap: 1rem;
 }
-
+.content-container-xploreipa{
+  /* background-color: red; */
+  flex-direction: column;
+}
 .content-half{
     width: 100%;
     flex-direction: column;
@@ -43,6 +46,7 @@
 .half1{
     flex-basis: 25%;
     /* background-color: red; */
+    width: 100%;
     align-items: center;
     justify-content: start;
     padding-right: 4rem;
@@ -64,6 +68,13 @@
     padding: 1rem;
     border: none;
     border-radius: 4px;
+}
+
+.content-half-xplore{
+  flex-direction: row;
+  justify-content: center;
+  border-right: none;
+  padding-right: 0;
 }
 span{
     color: black;
@@ -173,3 +184,120 @@ span{
   strong {
     color: #007BFF;
   }
+
+  .nav-link.active {
+    background-color: #489ef9; /* Highlight color */
+    font-weight: bold; /* Make the text bold */
+    border:none;
+    border-radius: 8px;
+    
+  }
+  .nav-link{
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-link:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    text-decoration: none;
+    border:none;
+    border-radius: 8px;
+  }
+  
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-container {
+    gap: 1.5rem;
+  }
+
+  .content-half {
+    padding: 0;
+    width: 100%;
+  }
+
+  .half1,
+  .half2 {
+    flex-basis: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .content-line h4 {
+    width: 100%;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .content-line code {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container .nav-link {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    height: auto;
+    width: 100%;
+  }
+
+  .content-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .render-content {
+    gap: 0.5rem;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .kyt-questions {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .card-container {
+    gap: 1rem;
+  }
+
+  .render-content {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 1rem 0;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .content-half {
+    padding: 0;
+  }
+
+  .kyt-questions {
+    font-size: 0.9rem;
+  }
+}
