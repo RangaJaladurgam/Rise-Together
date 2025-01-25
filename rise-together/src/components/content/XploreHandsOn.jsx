@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Card from "../Card/Card";
 import "./Util.css";
 import JavaHandsOn from "./JavaHandsOn";
@@ -15,23 +16,25 @@ function XploreHandsOn() {
   // Define content for each route
   const renderContent = () => {
     switch (location.pathname) {
-      case "/java-handson":
+      case "/java/java-handson":
         return <JavaHandsOn/>;
-      case "/sql-handson":
+      case "/java/sql-handson":
         return <SqlHandsOn/>;
-      case "/unix-handson":
+      case "/java/unix-handson":
         return <UnixHandsOn/>;
-      case "/ui-handson":
+      case "/java/ui-handson":
         return <UiHandsOn/>;
-       case "/js-handson":
+       case "/java/js-handson":
         return <JsHandsOn/>;
       default:
-        return <p>Select a HandsOn topic to see the details here.</p>;
+        return <p>Select a HandsOn topic to see solutions here.</p>;
     }
   };
 
   return (
     <div className="content">
+       <Link to="/" className="nav-link "> <span><i class="fa-solid fa-arrow-left"></i></span>
+        </Link>
       <h2>Xplore HandsOn (Java)</h2>
       <div className="content-container">
         {/* Left Half */}
@@ -41,7 +44,11 @@ function XploreHandsOn() {
 
         {/* Right Half */}
         <div className="card-container content-half half2">
-          {renderContent()}
+        <TransitionGroup>
+            <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
+              <div className="render-content">{renderContent()}</div>
+            </CSSTransition>
+          </TransitionGroup>
         </div>
       </div>
     </div>
