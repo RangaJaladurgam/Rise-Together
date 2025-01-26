@@ -12,7 +12,6 @@ import About from "./components/About/About";
 
 import "./App.css";
 import XploreHandsOn from "./components/content/XploreHandsOn";
-import JavaHandsOn from "./components/content/JavaHandsOn";
 import BizzSkills from "./components/content/BizzSkills";
 import KYT from "./components/content/KYT";
 import Question1 from "./components/content/Java/Question1";
@@ -26,7 +25,6 @@ import Question8 from "./components/content/Java/Question8";
 import Question9 from "./components/content/Java/Question9";
 import XploreIPA from "./components/content/XploreIPA";
 import CareerEdge from "./components/content/CareerEdge";
-import AscendCourses from "./components/content/AscendCourses";
 
 function App() {
   const location = useLocation();
