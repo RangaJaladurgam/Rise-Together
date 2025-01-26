@@ -1,0 +1,11 @@
+.banner {
+    width: 100%;
+
+    background-color: #007BFF;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+  }
+  

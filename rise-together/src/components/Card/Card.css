@@ -1,0 +1,24 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card:hover h4{
+    color: white;
+  }
+  
+  .card h4 {
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .card p {
+    color: #0b0000;
+  }
+  

@@ -1,0 +1,345 @@
+
+
+
+.content{
+    height: 91vh;
+    display: flex;
+    padding:2rem 0;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: red ; */
+}
+
+.content-container{
+    display: flex;
+    width: 100%;
+    /* background-color: green; */
+    gap: 1rem;
+}
+.content-container-xploreipa{
+  /* background-color: red; */
+  flex-direction: column;
+}
+.content-half{
+    width: 100%;
+    flex-direction: column;
+    /* background-color: blue; */
+    padding: 1rem;
+}
+
+.content-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: rgb(0, 195, 255); */
+}
+
+.card{
+    /* background-color: red; */
+    height: 70px;
+    width: 267px;
+}
+
+.card-container .nav-link{
+    /* background-color: green; */
+    height: 70px;
+}
+
+.half1{
+    flex-basis: 25%;
+    /* background-color: red; */
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    padding-right: 4rem;
+    border-right: 1px dashed grey ;
+}
+
+.half2{
+    flex-basis: 75%;
+    justify-content: start;
+}
+.content-line h4{
+    text-align: center;
+    /* background-color: red; */
+}
+.content-line code{
+    background-color: rgba(232, 223, 223, 0.737);
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.content-half-xplore{
+  flex-direction: row;
+  justify-content: center;
+  border-right: none;
+  padding-right: 0;
+}
+span{
+    color: black;
+}
+
+.ans{
+    text-decoration: underline;
+}
+
+.render-content{
+    /* background-color: red; */
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.handson-question{
+  /* background-color: red; */
+  flex-basis: 40%;
+}
+.handson-code{
+  /* background-color: red; */
+  flex-basis: 60%;
+}
+
+
+
+/* Slide in from the left */
+.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+  
+  /* Slide out to the right */
+  .slide-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .slide-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+
+  /* Initial state before the transition */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  
+  /* Active state during the transition */
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  /* Initial state for exit transition */
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Active state during exit transition */
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+
+
+  .kyt-questions {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .section {
+    border-bottom: 2px dotted #007BFF;
+    margin-bottom: 30px;
+  }
+  .question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .question:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #007BFF;
+  }
+
+  .nav-link.active {
+    background-color: #489ef9; /* Highlight color */
+    font-weight: bold; /* Make the text bold */
+    border:none;
+    border-radius: 8px;
+    
+  }
+  .nav-link{
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-link:hover  {
+    background-color: #0056b3; /* Darker color on hover */
+    text-decoration: none;
+    border:none;
+    border-radius: 8px;
+    transform: scale(1.03);
+  }
+  
+  
+  .ascend-header{
+    /* background-color: red; */
+    flex-grow: 1;
+  }
+
+  .ascend-header .card{
+    height: 3rem;
+    width: 100%;
+    /* background-color: rgb(0, 72, 255); */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-container {
+    gap: 1.5rem;
+  }
+
+  .content-half {
+    padding: 0;
+    width: 100%;
+  }
+
+  .half1,
+  .half2 {
+    flex-basis: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .content-line h4 {
+    width: 100%;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .content-line code {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container .nav-link {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    height: auto;
+    width: 100%;
+  }
+
+  .content-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .render-content {
+    gap: 0.5rem;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .kyt-questions {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .card-container {
+    gap: 0rem;
+  }
+
+  .render-content {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 1rem 0;
+  }
+  .content-line{
+    flex-direction: column;
+  }
+  .content-half {
+    padding: 0;
+  }
+
+  .kyt-questions {
+    font-size: 0.9rem;
+  }
+}

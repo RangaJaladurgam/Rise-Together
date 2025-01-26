@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+
+.container{
+  margin-inline:3rem ;
+}
+/* Initial state before the transition */
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-10%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Initial state before the transition */
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(0%);
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Active state during the transition */
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Initial state for exit transition */
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
   }
+  
+  /* Active state during exit transition */
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+/* Slide in from the left (enter) */
+.slide-enter {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
-.card {
-  padding: 2em;
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
-.read-the-docs {
-  color: #888;
+/* Slide out to the right (exit) */
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
 }
+
+.slide-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+
