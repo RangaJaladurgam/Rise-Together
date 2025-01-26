@@ -31,18 +31,18 @@ import AscendCourses from "./components/content/AscendCourses";
 function App() {
   const location = useLocation();
   return (
-    <div >
+    <div>
       <TransitionGroup>
         <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
-      <div className="container">
-        <Routes location={location}>
-          <Route path="/about" element={<About />} />
-          <Route path="/bizskills" element={<BizzSkills />} />
-          <Route path="/career-edge" element={<CareerEdge />} />
-          <Route path="/#ascend-course" element={<Home />} />
-        </Routes>
-      </div>
-      </CSSTransition>
+          <div className="container">
+            <Routes location={location}>
+              <Route path="/about" element={<About />} />
+              <Route path="/bizskills" element={<BizzSkills />} />
+              <Route path="/career-edge" element={<CareerEdge />} />
+              <Route path="/#ascend-course" element={<Home />} />
+            </Routes>
+          </div>
+        </CSSTransition>
       </TransitionGroup>
       <div className="container">
         <Routes>
