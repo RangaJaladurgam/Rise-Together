@@ -1,3 +1,6 @@
+
+
+
 .content{
     height: 91vh;
     display: flex;
@@ -194,12 +197,14 @@ span{
   .nav-link{
     transition: all 0.2s ease-in-out;
   }
-  .nav-link:hover {
+  .nav-link:hover  {
     background-color: #0056b3; /* Darker color on hover */
     text-decoration: none;
     border:none;
     border-radius: 8px;
+    transform: scale(1.03);
   }
+  
   
   .ascend-header{
     /* background-color: red; */
