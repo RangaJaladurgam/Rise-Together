@@ -1,11 +1,10 @@
 import React from 'react';
 import './Banner.css';
+import banner from '../../assets/Banner.png'
 
 const Banner = () => {
   return (
     <div className="banner">
-      <h1>Welcome to the React App</h1>
-      <p>This is a simple app with routing, a navbar, and cards.</p>
     </div>
   );
 };
