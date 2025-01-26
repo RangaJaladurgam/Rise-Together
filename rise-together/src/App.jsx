@@ -25,25 +25,28 @@ import Question7 from "./components/content/Java/Question7";
 import Question8 from "./components/content/Java/Question8";
 import Question9 from "./components/content/Java/Question9";
 import XploreIPA from "./components/content/XploreIPA";
+import CareerEdge from "./components/content/CareerEdge";
+import AscendCourses from "./components/content/AscendCourses";
 
 function App() {
   const location = useLocation();
   return (
-    <>
+    <div >
       <TransitionGroup>
         <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
-          <div className="container">
-            <Routes location={location}>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/bizskills" element={<BizzSkills />} />
-             
-            </Routes>
-          </div>
-        </CSSTransition>
+      <div className="container">
+        <Routes location={location}>
+          <Route path="/about" element={<About />} />
+          <Route path="/bizskills" element={<BizzSkills />} />
+          <Route path="/career-edge" element={<CareerEdge />} />
+          <Route path="/#ascend-course" element={<Home />} />
+        </Routes>
+      </div>
+      </CSSTransition>
       </TransitionGroup>
       <div className="container">
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/java" element={<XploreHandsOn />} />
           <Route path="/kyt" element={<KYT />} />
           <Route path="/ipa-practice" element={<XploreIPA />} />
@@ -64,7 +67,7 @@ function App() {
           <Route path="/kyt/digital-awareness" element={<KYT />} />
           <Route path="/kyt/mfdm" element={<KYT />} />
           <Route path="/kyt/final-assessment" element={<KYT />} />
-         
+
           <Route path="/ipa-practice/question-1" element={<XploreIPA />} />
           <Route path="/ipa-practice/question-2" element={<XploreIPA />} />
           <Route path="/ipa-practice/question-3" element={<XploreIPA />} />
@@ -117,7 +120,7 @@ function App() {
           </CSSTransition>
         </TransitionGroup>
       </div>
-    </>
+    </div>
   );
 }
 const AppWrapper = () => (
