@@ -9,8 +9,11 @@
     align-items: center;
     text-align: center;
   }
+  .card:hover h4{
+    color: white;
+  }
   
-  .card h3 {
+  .card h4 {
     margin: 10px 0;
     color: black;
   }

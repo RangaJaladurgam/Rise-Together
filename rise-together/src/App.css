@@ -7,25 +7,31 @@
   transform: translateX(-10%);
 }
 
-/* Active state during the transition */
-.fade-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-
-/* Initial state for exit transition */
-.fade-exit {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Active state during exit transition */
-.fade-exit-active {
-  opacity: 0;
-  transform: translateX(10%);
-  transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
+  /* Initial state before the transition */
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  
+  /* Active state during the transition */
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  /* Initial state for exit transition */
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Active state during exit transition */
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
 /* Slide in from the left (enter) */
 .slide-enter {
   transform: translateX(-100%);

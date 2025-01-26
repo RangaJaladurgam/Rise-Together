@@ -30,6 +30,8 @@ function XploreHandsOn() {
         return <p>Select a HandsOn topic to see solutions here.</p>;
     }
   };
+  // Helper function to check if a link is active
+  const isActive = (path) => location.pathname === path;
 
   return (
     <div className="content">
@@ -39,7 +41,7 @@ function XploreHandsOn() {
       <div className="content-container">
         {/* Left Half */}
         <div className="card-container content-half half1">
-          <SideBar/>
+          <SideBar isActive={isActive}/>
         </div>
 
         {/* Right Half */}

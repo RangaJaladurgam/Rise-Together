@@ -36,6 +36,8 @@ function KYT() {
     }
   };
 
+  const isActive = (path) => location.pathname === path;
+
   return (
     <div className="content">
       <Link to="/" className="">
@@ -47,7 +49,7 @@ function KYT() {
       <h2>Know Your Organization</h2>
       <div className="content-container">
         <div className="card-container content-half half1">
-          <KYT_SideBar />
+          <KYT_SideBar isActive={isActive} />
         </div>
 
         <div className="card-container content-half half2">
