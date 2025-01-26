@@ -26,14 +26,8 @@ function Home() {
         <Link to="/career-edge" className="nav-link">
           <Card title="Career Edge" />
         </Link>
-        <Link to="/ascend-courses" className="nav-link">
-          <Card title="AsCEnD Courses" />
-        </Link>
-        <Link to="/ipa-practice" className="nav-link">
-          <Card title="Xplore Practice IPA Questions 2024" />
-        </Link>
-        <Link to="/ipa-practice" className="nav-link">
-          <Card title="Xplore Practice IPA Questions 2024" />
+        <Link to="/hackathon-java" className="nav-link">
+          <Card title="Hackathon Java" />
         </Link>
       </div>
       <div className="card-container">
