@@ -1,19 +1,38 @@
 .navbar {
-    width: 100%;
-    background-color: #000000;
-    padding: 20px 3rem;
-    display: flex;
-    justify-content: right;
-    gap: 20px;
-  }
-  
-  .nav-link, .nav-item{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  width: 100%;
+  background-color: #000000;
+  padding: 20px 3rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.nav-link {
+  text-decoration: none;
+}
 
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
+.nav-item {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ddd;
+}
+
+.nav-item.active {
+  color: #00bfff; /* Highlight color for active tab */
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00bfff; /* Underline color */
+}
