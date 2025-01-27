@@ -25,6 +25,14 @@ import Question8 from "./components/content/Java/Question8";
 import Question9 from "./components/content/Java/Question9";
 import XploreIPA from "./components/content/XploreIPA";
 import CareerEdge from "./components/content/CareerEdge";
+import ComingSoon from "./components/ComingSoon";
+import Footer from "./components/Footer/Footer";
+import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
+import Unix_Question1 from "./components/content/Unix/Unix_Question1";
+import Unix_Question2 from "./components/content/Unix/Unix_Question2";
+import Unix_Question3 from "./components/content/Unix/Unix_Question3";
+import Unix_Question4 from "./components/content/Unix/Unix_Question4";
+import Unix_Question5 from "./components/content/Unix/Unix_Question5";
 
 function App() {
   const location = useLocation();
@@ -37,7 +45,44 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/bizskills" element={<BizzSkills />} />
               <Route path="/career-edge" element={<CareerEdge />} />
-              <Route path="/#ascend-course" element={<Home />} />
+              <Route path="/hackathon-java" element={<ComingSoon />} />
+              {/* Ascend Courses Links */}
+              <Route
+                path="/ascend-courses/advance-java"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/java-mvc&web-dev"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/python-web&flask"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/machine-learning"
+                element={<ComingSoon />}
+              />
+              <Route path="/ascend-courses/node" element={<ComingSoon />} />
+              <Route path="/ascend-courses/mongo-db" element={<ComingSoon />} />
+              <Route
+                path="/ascend-courses/test-automation"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/azure-cloud"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/adv-dotnet"
+                element={<ComingSoon />}
+              />
+              <Route
+                path="/ascend-courses/datawarehouse"
+                element={<ComingSoon />}
+              />
+              <Route path="/ascend-courses/devops" element={<ComingSoon />} />
+              <Route path="/ascend-courses/bigdata" element={<ComingSoon />} />
             </Routes>
           </div>
         </CSSTransition>
@@ -48,6 +93,7 @@ function App() {
           <Route path="/java" element={<XploreHandsOn />} />
           <Route path="/kyt" element={<KYT />} />
           <Route path="/ipa-practice" element={<XploreIPA />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
 
         <Routes>
@@ -77,6 +123,7 @@ function App() {
             timeout={300}
           >
             <Routes location={location}>
+              {/* Java Handson */}
               <Route
                 path="/java/java-handson/problem1-1"
                 element={<Question1 />}
@@ -114,6 +161,27 @@ function App() {
                 element={<Question9 />}
               />
               {/* --- */}
+              {/* Unix Handson */}
+              <Route
+                path="/java/unix-handson/problem-1"
+                element={<Unix_Question1 />}
+              />
+              <Route
+                path="/java/unix-handson/problem-2"
+                element={<Unix_Question2 />}
+              />
+              <Route
+                path="/java/unix-handson/problem-3"
+                element={<Unix_Question3 />}
+              />
+              <Route
+                path="/java/unix-handson/problem-4"
+                element={<Unix_Question4 />}
+              />
+              <Route
+                path="/java/unix-handson/problem-5"
+                element={<Unix_Question5 />}
+              />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
@@ -123,8 +191,13 @@ function App() {
 }
 const AppWrapper = () => (
   <Router>
-    <Navbar />
-    <App />
+    <div className="app-wrapper">
+      <Navbar />
+      <div className="main-content">
+        <App />
+      </div>
+      <Footer />
+    </div>
   </Router>
 );
 
