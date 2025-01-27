@@ -2,7 +2,6 @@
 
 
 .content{
-    height: 91vh;
     display: flex;
     padding:2rem 0;
     flex-direction: column;
@@ -157,9 +156,9 @@ span{
 
   .kyt-questions {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #EFEAE7;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #efeae7c4;
   }
   .section {
     border-bottom: 2px dotted #007BFF;

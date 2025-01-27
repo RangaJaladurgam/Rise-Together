@@ -2,4 +2,63 @@
     padding: 20px;
     text-align: center;
   }
+  .about-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
   
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-media {
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin: 10px 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #1c5f99;
+  }
+  
+  .contact a {
+    color: #4a90e2;
+    text-decoration: underline;
+  }
+  
+  .contact a:hover {
+    color: #1c5f99;
+  }  

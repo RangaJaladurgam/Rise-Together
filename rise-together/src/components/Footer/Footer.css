@@ -1,0 +1,41 @@
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 40px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #4a90e2;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #1c5f99;
+  }
+
+  .privacy-policy-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .policy-list {
+    list-style: disc;
+    margin-left: 20px;
+  }
