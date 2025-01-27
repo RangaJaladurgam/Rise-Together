@@ -7,18 +7,18 @@ function JsHandsOn() {
   return (
     <>
       <div className="content-line">
-        <Link to="/js/problem-1" className="nav-link">
+        <Link to="/java/js-handson/problem-1" className="nav-link">
           <Card title="JavaScript HandsOn 1" />
         </Link>
-        <Link to="/js/problem-2" className="nav-link">
+        <Link to="/java/js-handson/problem-2" className="nav-link">
           <Card title="JavaScript HandsOn 2" />
         </Link>
       </div>
       <div className="content-line">
-        <Link to="/js/problem-3" className="nav-link ">
+        <Link to="/java/js-handson/problem-3" className="nav-link ">
           <Card title="JavaScript HandsOn 3" />
         </Link>
-        <Link to="/js/problem-4" className="nav-link">
+        <Link to="/java/js-handson/problem-4" className="nav-link">
           <Card title="JavaScript HandsOn 4" />
         </Link>
       </div>
