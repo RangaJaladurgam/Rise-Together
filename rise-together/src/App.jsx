@@ -33,6 +33,16 @@ import Unix_Question2 from "./components/content/Unix/Unix_Question2";
 import Unix_Question3 from "./components/content/Unix/Unix_Question3";
 import Unix_Question4 from "./components/content/Unix/Unix_Question4";
 import Unix_Question5 from "./components/content/Unix/Unix_Question5";
+import Ui_Question1 from "./components/content/Ui/Ui_Question1";
+import Ui_Question2 from "./components/content/Ui/Ui_Question2";
+import Ui_Question3 from "./components/content/Ui/Ui_Question3";
+import Ui_Question4 from "./components/content/Ui/Ui_Question4";
+import Ui_Question5 from "./components/content/Ui/Ui_Question5";
+import Ui_Question6 from "./components/content/Ui/Ui_Question6";
+import Js_Question1 from "./components/content/Js/Js_Question1";
+import Js_Question2 from "./components/content/Js/Js_Question2";
+import Js_Question3 from "./components/content/Js/Js_Question3";
+import Js_Question4 from "./components/content/Js/Js_Question4";
 
 function App() {
   const location = useLocation();
@@ -181,6 +191,48 @@ function App() {
               <Route
                 path="/java/unix-handson/problem-5"
                 element={<Unix_Question5 />}
+              />
+              {/* Ui HandsOn */}
+              <Route
+                path="/java/ui-handson/problem-1"
+                element={<Ui_Question1 />}
+              />
+              <Route
+                path="/java/ui-handson/problem-2"
+                element={<Ui_Question2 />}
+              />
+              <Route
+                path="/java/ui-handson/problem-3"
+                element={<Ui_Question3 />}
+              />
+              <Route
+                path="/java/ui-handson/problem-4"
+                element={<Ui_Question4 />}
+              />
+              <Route
+                path="/java/ui-handson/problem-5"
+                element={<Ui_Question5 />}
+              />
+              <Route
+                path="/java/ui-handson/problem-6"
+                element={<Ui_Question6 />}
+              />
+              {/* JavaScript links */}
+              <Route
+                path="/java/js-handson/problem-1"
+                element={<Js_Question1 />}
+              />
+            <Route
+                path="/java/js-handson/problem-2"
+                element={<Js_Question2 />}
+              />
+            <Route
+                path="/java/js-handson/problem-3"
+                element={<Js_Question3 />}
+              />
+            <Route
+                path="/java/js-handson/problem-4"
+                element={<Js_Question4 />}
               />
             </Routes>
           </CSSTransition>
