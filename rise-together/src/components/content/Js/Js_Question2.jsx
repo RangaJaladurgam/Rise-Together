@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -6,7 +6,9 @@ import "../Util.css";
 
 function Js_Question2() {
   // Function to render the content for the right side
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const codeString1 = 
   `index.html
 

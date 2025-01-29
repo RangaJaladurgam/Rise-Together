@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 const ComingSoon = ({ message = "Under Development. Stay Tuned!" }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="content">
         <Link to="/" className="">

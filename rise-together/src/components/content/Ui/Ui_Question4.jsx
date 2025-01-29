@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import "../Util.css";
 
 function Ui_Question4() {
   // Function to render the content for the right side
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const codeString = `Solution :
     
 <! DOCTYPE html>
