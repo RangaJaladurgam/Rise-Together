@@ -49,6 +49,7 @@ import Python_WebFlask from "./components/content/Ascend-Courses/Python_WebFlask
 import MachineLearning from "./components/content/Ascend-Courses/MachineLearning";
 import Node from "./components/content/Ascend-Courses/Node";
 import MongoDb from "./components/content/Ascend-Courses/MongoDb";
+import TestAutomation from "./components/content/Ascend-Courses/TestAutomation";
 
 function App() {
   const location = useLocation();
@@ -84,7 +85,7 @@ function App() {
               <Route path="/ascend-courses/mongo-db" element={<MongoDb />} />
               <Route
                 path="/ascend-courses/test-automation"
-                element={<ComingSoon />}
+                element={<TestAutomation />}
               />
               <Route
                 path="/ascend-courses/azure-cloud"
