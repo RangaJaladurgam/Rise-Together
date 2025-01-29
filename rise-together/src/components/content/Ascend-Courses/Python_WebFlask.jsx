@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Util.css";
-function Java_Python_WebFlask() {
+function Python_WebFlask() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -112,4 +112,4 @@ function Java_Python_WebFlask() {
   );
 }
 
-export default Java_Python_WebFlask;
+export default Python_WebFlask;

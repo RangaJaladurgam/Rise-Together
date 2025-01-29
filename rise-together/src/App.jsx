@@ -45,7 +45,9 @@ import Js_Question3 from "./components/content/Js/Js_Question3";
 import Js_Question4 from "./components/content/Js/Js_Question4";
 import Advance_Java from "./components/content/Ascend-Courses/Advance_Java";
 import Java_MVC_Web from "./components/content/Ascend-Courses/Java_MVC_Web";
-import Java_Python_WebFlask from "./components/content/Ascend-Courses/Java_Python_WebFlask";
+import Java_Python_WebFlask from "./components/content/Ascend-Courses/Python_WebFlask";
+import Python_WebFlask from "./components/content/Ascend-Courses/Python_WebFlask";
+import MachineLearning from "./components/content/Ascend-Courses/MachineLearning";
 
 function App() {
   const location = useLocation();
@@ -71,11 +73,11 @@ function App() {
               />
               <Route
                 path="/ascend-courses/python-web&flask"
-                element={<Java_Python_WebFlask />}
+                element={<Python_WebFlask />}
               />
               <Route
                 path="/ascend-courses/machine-learning"
-                element={<ComingSoon />}
+                element={<MachineLearning />}
               />
               <Route path="/ascend-courses/node" element={<ComingSoon />} />
               <Route path="/ascend-courses/mongo-db" element={<ComingSoon />} />
