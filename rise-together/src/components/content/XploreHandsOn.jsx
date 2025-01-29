@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Card from "../Card/Card";
@@ -12,7 +12,9 @@ import JsHandsOn from "./JsHandsOn";
 
 function XploreHandsOn() {
   const location = useLocation();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Define content for each route
   const renderContent = () => {
     switch (location.pathname) {

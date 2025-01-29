@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import './Footer.css';
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return (
       <div className="content">
         <h2 className="">Privacy Policy</h2>
