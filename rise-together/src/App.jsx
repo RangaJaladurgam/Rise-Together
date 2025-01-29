@@ -53,6 +53,7 @@ import TestAutomation from "./components/content/Ascend-Courses/TestAutomation";
 import AzureCloud from "./components/content/Ascend-Courses/AzureCloud";
 import AdvanceDotNet from "./components/content/Ascend-Courses/AdvanceDotNet";
 import Datawarehouse from "./components/content/Ascend-Courses/DatawareHouse";
+import Devops from "./components/content/Ascend-Courses/Devops";
 
 function App() {
   const location = useLocation();
@@ -102,7 +103,7 @@ function App() {
                 path="/ascend-courses/datawarehouse"
                 element={<Datawarehouse />}
               />
-              <Route path="/ascend-courses/devops" element={<ComingSoon />} />
+              <Route path="/ascend-courses/devops" element={<Devops />} />
               <Route path="/ascend-courses/bigdata" element={<ComingSoon />} />
             </Routes>
           </div>
