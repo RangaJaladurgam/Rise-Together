@@ -51,6 +51,7 @@ import Node from "./components/content/Ascend-Courses/Node";
 import MongoDb from "./components/content/Ascend-Courses/MongoDb";
 import TestAutomation from "./components/content/Ascend-Courses/TestAutomation";
 import AzureCloud from "./components/content/Ascend-Courses/AzureCloud";
+import AdvanceDotNet from "./components/content/Ascend-Courses/AdvanceDotNet";
 
 function App() {
   const location = useLocation();
@@ -94,7 +95,7 @@ function App() {
               />
               <Route
                 path="/ascend-courses/adv-dotnet"
-                element={<ComingSoon />}
+                element={<AdvanceDotNet />}
               />
               <Route
                 path="/ascend-courses/datawarehouse"
