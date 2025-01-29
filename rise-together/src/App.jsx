@@ -54,6 +54,7 @@ import AzureCloud from "./components/content/Ascend-Courses/AzureCloud";
 import AdvanceDotNet from "./components/content/Ascend-Courses/AdvanceDotNet";
 import Datawarehouse from "./components/content/Ascend-Courses/DatawareHouse";
 import Devops from "./components/content/Ascend-Courses/Devops";
+import BigData from "./components/content/Ascend-Courses/BigData";
 
 function App() {
   const location = useLocation();
@@ -104,7 +105,7 @@ function App() {
                 element={<Datawarehouse />}
               />
               <Route path="/ascend-courses/devops" element={<Devops />} />
-              <Route path="/ascend-courses/bigdata" element={<ComingSoon />} />
+              <Route path="/ascend-courses/bigdata" element={<BigData />} />
             </Routes>
           </div>
         </CSSTransition>
