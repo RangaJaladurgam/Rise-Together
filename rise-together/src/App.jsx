@@ -44,6 +44,17 @@ import Js_Question2 from "./components/content/Js/Js_Question2";
 import Js_Question3 from "./components/content/Js/Js_Question3";
 import Js_Question4 from "./components/content/Js/Js_Question4";
 import Advance_Java from "./components/content/Ascend-Courses/Advance_Java";
+import Java_MVC_Web from "./components/content/Ascend-Courses/Java_MVC_Web";
+import Python_WebFlask from "./components/content/Ascend-Courses/Python_WebFlask";
+import MachineLearning from "./components/content/Ascend-Courses/MachineLearning";
+import Node from "./components/content/Ascend-Courses/Node";
+import MongoDb from "./components/content/Ascend-Courses/MongoDb";
+import TestAutomation from "./components/content/Ascend-Courses/TestAutomation";
+import AzureCloud from "./components/content/Ascend-Courses/AzureCloud";
+import AdvanceDotNet from "./components/content/Ascend-Courses/AdvanceDotNet";
+import Datawarehouse from "./components/content/Ascend-Courses/DatawareHouse";
+import Devops from "./components/content/Ascend-Courses/Devops";
+import BigData from "./components/content/Ascend-Courses/BigData";
 
 function App() {
   const location = useLocation();
@@ -65,36 +76,36 @@ function App() {
               />
               <Route
                 path="/ascend-courses/java-mvc&web-dev"
-                element={<ComingSoon />}
+                element={<Java_MVC_Web />}
               />
               <Route
                 path="/ascend-courses/python-web&flask"
-                element={<ComingSoon />}
+                element={<Python_WebFlask />}
               />
               <Route
                 path="/ascend-courses/machine-learning"
-                element={<ComingSoon />}
+                element={<MachineLearning />}
               />
-              <Route path="/ascend-courses/node" element={<ComingSoon />} />
-              <Route path="/ascend-courses/mongo-db" element={<ComingSoon />} />
+              <Route path="/ascend-courses/node" element={<Node />} />
+              <Route path="/ascend-courses/mongo-db" element={<MongoDb />} />
               <Route
                 path="/ascend-courses/test-automation"
-                element={<ComingSoon />}
+                element={<TestAutomation />}
               />
               <Route
                 path="/ascend-courses/azure-cloud"
-                element={<ComingSoon />}
+                element={<AzureCloud />}
               />
               <Route
                 path="/ascend-courses/adv-dotnet"
-                element={<ComingSoon />}
+                element={<AdvanceDotNet />}
               />
               <Route
                 path="/ascend-courses/datawarehouse"
-                element={<ComingSoon />}
+                element={<Datawarehouse />}
               />
-              <Route path="/ascend-courses/devops" element={<ComingSoon />} />
-              <Route path="/ascend-courses/bigdata" element={<ComingSoon />} />
+              <Route path="/ascend-courses/devops" element={<Devops />} />
+              <Route path="/ascend-courses/bigdata" element={<BigData />} />
             </Routes>
           </div>
         </CSSTransition>
