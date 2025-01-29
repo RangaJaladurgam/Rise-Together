@@ -43,9 +43,11 @@ import Js_Question1 from "./components/content/Js/Js_Question1";
 import Js_Question2 from "./components/content/Js/Js_Question2";
 import Js_Question3 from "./components/content/Js/Js_Question3";
 import Js_Question4 from "./components/content/Js/Js_Question4";
+import Advance_Java from "./components/content/Ascend-Courses/Advance_Java";
 
 function App() {
   const location = useLocation();
+  
   return (
     <div>
       <TransitionGroup>
@@ -59,7 +61,7 @@ function App() {
               {/* Ascend Courses Links */}
               <Route
                 path="/ascend-courses/advance-java"
-                element={<ComingSoon />}
+                element={<Advance_Java />}
               />
               <Route
                 path="/ascend-courses/java-mvc&web-dev"
@@ -222,15 +224,15 @@ function App() {
                 path="/java/js-handson/problem-1"
                 element={<Js_Question1 />}
               />
-            <Route
+              <Route
                 path="/java/js-handson/problem-2"
                 element={<Js_Question2 />}
               />
-            <Route
+              <Route
                 path="/java/js-handson/problem-3"
                 element={<Js_Question3 />}
               />
-            <Route
+              <Route
                 path="/java/js-handson/problem-4"
                 element={<Js_Question4 />}
               />
@@ -242,6 +244,8 @@ function App() {
   );
 }
 const AppWrapper = () => (
+  
+  <>
   <Router>
     <div className="app-wrapper">
       <Navbar />
@@ -251,6 +255,7 @@ const AppWrapper = () => (
       <Footer />
     </div>
   </Router>
+  </>
 );
 
 export default AppWrapper;
