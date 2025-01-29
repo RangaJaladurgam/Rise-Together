@@ -48,6 +48,7 @@ import Java_MVC_Web from "./components/content/Ascend-Courses/Java_MVC_Web";
 import Python_WebFlask from "./components/content/Ascend-Courses/Python_WebFlask";
 import MachineLearning from "./components/content/Ascend-Courses/MachineLearning";
 import Node from "./components/content/Ascend-Courses/Node";
+import MongoDb from "./components/content/Ascend-Courses/MongoDb";
 
 function App() {
   const location = useLocation();
@@ -80,7 +81,7 @@ function App() {
                 element={<MachineLearning />}
               />
               <Route path="/ascend-courses/node" element={<Node />} />
-              <Route path="/ascend-courses/mongo-db" element={<ComingSoon />} />
+              <Route path="/ascend-courses/mongo-db" element={<MongoDb />} />
               <Route
                 path="/ascend-courses/test-automation"
                 element={<ComingSoon />}
