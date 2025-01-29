@@ -45,6 +45,7 @@ import Js_Question3 from "./components/content/Js/Js_Question3";
 import Js_Question4 from "./components/content/Js/Js_Question4";
 import Advance_Java from "./components/content/Ascend-Courses/Advance_Java";
 import Java_MVC_Web from "./components/content/Ascend-Courses/Java_MVC_Web";
+import Java_Python_WebFlask from "./components/content/Ascend-Courses/Java_Python_WebFlask";
 
 function App() {
   const location = useLocation();
@@ -70,7 +71,7 @@ function App() {
               />
               <Route
                 path="/ascend-courses/python-web&flask"
-                element={<ComingSoon />}
+                element={<Java_Python_WebFlask />}
               />
               <Route
                 path="/ascend-courses/machine-learning"
