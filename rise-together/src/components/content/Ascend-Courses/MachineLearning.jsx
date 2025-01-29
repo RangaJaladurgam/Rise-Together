@@ -11,7 +11,7 @@ function MachineLearning() {
         <Link to="/" className="">
           {" "}
           <span>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </span>
         </Link>
         <h2>AsCEnD Machine Learning</h2>
